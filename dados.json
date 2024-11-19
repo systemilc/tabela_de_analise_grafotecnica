@@ -1,0 +1,114 @@
+{
+  "analises": [
+      {
+          "tipo": "SUBJETIVAS",
+          "nome": "Ritmo",
+          "opcoes": ["", "Fraco", "Médio", "Forte"]
+      },
+      {
+          "tipo": "SUBJETIVAS",
+          "nome": "Dinamismo",
+          "opcoes": ["", "Baixo", "Médio", "Alto"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Velocidade",
+          "opcoes": ["", "Lenta", "Moderada", "Rápida"]
+      },
+      {
+          "tipo": "SUBJETIVAS",
+          "nome": "Habilidade",
+          "opcoes": ["", "Rústica", "Canhestra", "Escolar média", "Madura secundária", "Senil", "Patológica"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Letra",
+          "opcoes": ["", "Imprensa", "Cursiva", "Polimorfismo"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Ataque",
+          "opcoes": ["", "Ensaido", "Não apoiado", "Apoiado", "Arpão", "Em gancho", "Infinito"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Remate",
+          "opcoes": ["", "Ensaido", "Não apoiado", "Apoiado", "Arpão", "Em gancho", "Infinito"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Gramas (forma)",
+          "opcoes": ["", "Retilíneo", "Curvilíneo", "Circular", "Sinuoso", "Presilha", "Platô"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Gramas (posição)",
+          "opcoes": ["", "Não passante", "Passante superior", "Passante inferior", "Duplo passante"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Hábitos Gráficos",
+          "opcoes": ["", "Traços Ornamentais", "Linhas de Impulso", "Cetras", "Helicoidal", "Esquírolas", "Mínimo Gráfico"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Trajetórias",
+          "opcoes": ["", "Sinistro-destro", "Destro-sinistro", "Horário", "Anti-horário"]
+      },
+      {
+          "tipo": "SUBJETIVAS",
+          "nome": "Espontaneidade",
+          "opcoes": ["", "Fluída", "Trêmula"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Traços de ligação",
+          "opcoes": ["", "Por baixo", "Ao centro", "Por cima"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Andamento",
+          "opcoes": ["", "Por baixo", "Ao centro", "Por cima"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Alinhamento",
+          "opcoes": ["", "Horizontal", "Ascendente", "Descendente", "Arqueado", "Sinuoso"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Espaçamentos gráficos",
+          "opcoes": ["", "Curto", "Médio", "Longo"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Inclinação axial",
+          "opcoes": ["", "Vertical", "Dextrogira", "Sinistrogira", "Mista"]
+      },
+      {
+          "tipo": "SUBJETIVAS",
+          "nome": "Proporcionalidade",
+          "opcoes": ["", "Baixa", "Média", "Alta"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Calibre",
+          "opcoes": ["", "Pequeno", "Médio", "Grande"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Pressão",
+          "opcoes": ["", "Fraca", "Média", "Forte"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Gladiolagem",
+          "opcoes": ["", "Constante", "Positiva", "Negativa"]
+      },
+      {
+          "tipo": "OBJETIVAS",
+          "nome": "Tendência de punho",
+          "opcoes": ["", "Angulosidade", "Arcada", "Guirlanda", "Mista"]
+      }
+  ]
+}

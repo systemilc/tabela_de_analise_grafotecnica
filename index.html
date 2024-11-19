@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise Grafoscópica</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>ANÁLISE GRAFOSCÓPICA</h1>
+
+    <table id="tabela-analises">
+      <thead>
+        <tr>
+          <th>ANÁLISES</th>
+          <th>PADRÃO</th>
+          <th>QUESTIONADO</th>
+          <th>FUNDAMENTAÇÃO</th>
+          <th>CONVERGÊNCIA</th>
+          <th>DIVERGÊNCIA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas serão geradas dinamicamente com base no JSON -->
+      </tbody>
+    </table>
+
+    <!-- Tabela de Resultados -->
+    <table>
+      <tbody>
+        <tr>
+          <td>QUANTIDADE CONVERGÊNCIA</td>
+          <td>QUANTIDADE DIVERGÊNCIA</td>
+          <td rowspan="2" class="final-result" id="resultado-final">
+            RESULTADO FINAL
+          </td>
+        </tr>
+        <tr>
+          <td><span id="resultado-convergencia">0</span></td>
+          <td><span id="resultado-divergencia">0</span></td>
+        </tr>
+        <tr>
+          <td>PERCENTUAL CONVERGÊNCIA</td>
+          <td>PERCENTUAL DIVERGÊNCIA</td>
+        </tr>
+        <tr>
+          <td><span id="percentual-convergencia">0</span></td>
+          <td><span id="percentual-divergencia">0</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="calcular-btn">Calcular</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

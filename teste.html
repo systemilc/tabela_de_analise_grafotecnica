@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise Grafoscópica</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #b0d4f1;
+      }
+      .highlight {
+        background-color: #f2d7d6;
+      }
+      select {
+        width: 100%;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ANÁLISE GRAFOSCÓPICA</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ANÁLISES</th>
+          <th>PADRÃO</th>
+          <th>QUESTIONADO</th>
+          <th>FUNDAMENTAÇÃO</th>
+          <th>CONVERGÊNCIA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td rowspan="4">SUBJETIVAS</td>
+          <td>Ritmo</td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Fraco">Fraco</option>
+              <option value="Médio">Médio</option>
+              <option value="Forte">Forte</option>
+            </select>
+          </td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Fraco">Fraco</option>
+              <option value="Médio">Médio</option>
+              <option value="Forte">Forte</option>
+            </select>
+          </td>
+          <td class="convergencia"></td>
+        </tr>
+        <tr>
+          <td>Dinamismo</td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Baixo">Baixo</option>
+              <option value="Médio">Médio</option>
+              <option value="Alto">Alto</option>
+            </select>
+          </td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Baixo">Baixo</option>
+              <option value="Médio">Médio</option>
+              <option value="Alto">Alto</option>
+            </select>
+          </td>
+          <td class="convergencia"></td>
+        </tr>
+        <tr>
+          <td>Velocidade</td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Lenta">Lenta</option>
+              <option value="Moderada">Moderada</option>
+              <option value="Rápida">Rápida</option>
+            </select>
+          </td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Lenta">Lenta</option>
+              <option value="Moderada">Moderada</option>
+              <option value="Rápida">Rápida</option>
+            </select>
+          </td>
+          <td class="convergencia"></td>
+        </tr>
+        <tr>
+          <td>Habilidade</td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Rústica">Rústica</option>
+              <option value="Canhestra">Canhestra</option>
+              <option value="Escolar média">Escolar média</option>
+              <option value="Madura secundária">Madura secundária</option>
+              <option value="Senil">Senil</option>
+              <option value="Patológica">Patológica</option>
+            </select>
+          </td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Rústica">Rústica</option>
+              <option value="Canhestra">Canhestra</option>
+              <option value="Escolar média">Escolar média</option>
+              <option value="Madura secundária">Madura secundária</option>
+              <option value="Senil">Senil</option>
+              <option value="Patológica">Patológica</option>
+            </select>
+          </td>
+          <td class="convergencia"></td>
+        </tr>
+        <!-- Adicione mais linhas conforme necessário, utilizando a mesma estrutura -->
+        <tr>
+          <td>Dificuldade</td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Alta">Alta</option>
+              <option value="Média">Média</option>
+              <option value="Baixa">Baixa</option>
+            </select>
+          </td>
+          <td>
+            <select onchange="atualizaConvergencia(this)">
+              <option value="">Selecione...</option>
+              <option value="Alta">Alta</option>
+              <option value="Média">Média</option>
+              <option value="Baixa">Baixa</option>
+            </select>
+          </td>
+          <td class="convergencia"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      function atualizaConvergencia(selectElement) {
+        const row = selectElement.closest("tr");
+        const questionado = row.querySelector("td:nth-child(3) select").value;
+        const fundamentacao = row.querySelector("td:nth-child(4) select").value;
+        const convergenciaCell = row.querySelector(".convergencia");
+
+        if (questionado === "" || fundamentacao === "") {
+          convergenciaCell.textContent = "";
+        } else {
+          convergenciaCell.textContent =
+            questionado === fundamentacao ? "1" : "0";
+        }
+      }
+    </script>
+  </body>
+</html>

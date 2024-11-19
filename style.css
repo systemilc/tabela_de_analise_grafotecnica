@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+  }
+  h1 {
+    text-align: center;
+    background-color: #005b87; /* Azul escuro */
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th,
+  td {
+    border: 1px solid #007bff; /* Azul */
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #e0f7fa; /* Azul claro */
+  }
+  .final-result {
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff000; /* Amarelo */
+  }
+  .results {
+    background-color: #005b87;
+    color: white;
+    font-weight: bold;
+  }
+  .highlight {
+    background-color: #f2d7d6; /* Rosa claro */
+  }
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
